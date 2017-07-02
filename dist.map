@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/index.js"],"names":[],"mappings":"AAAA,QAAQ,GAAR,CAAY,IAAZ;;AAEA,IAAI,IAAJ,EAAU;AACR,QAAM,IAAI,KAAJ,CAAU,SAAV,CAAN;AACD","file":"dist","sourcesContent":["console.log('hi')\n\nif (true) {\n  throw new Error('testing')\n}\n"]}

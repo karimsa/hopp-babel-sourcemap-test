@@ -1,0 +1,20 @@
+{
+  "name": "t",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-hopp": "hopp -R && npm run fix",
+    "build-babel": "babel src/index.js -o dist/index.js --presets=babili --source-maps && npm run fix",
+    "fix": "node -e 'fs=require(\"fs\");fs.writeFileSync(\"./dist/index.js.map\",JSON.stringify(JSON.parse(fs.readFileSync(\"./dist/index.js.map\",\"utf8\")),null,2))'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-babili": "^0.1.4",
+    "hopp": "^1.0.0-alpha.21",
+    "hopp-plugin-babel": "^1.0.0-alpha.16"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "sources": [
+    "../src/index.js"
+  ],
+  "names": [
+    "console",
+    "log",
+    "Error"
+  ],
+  "mappings": "AAGE,KAHFA,SAAQC,GAAR,CAAY,IAAZ,CAGE,CAAM,GAAIC,MAAJ,CAAU,SAAV,CAAN",
+  "file": "../src/index.js",
+  "sourcesContent": [
+    "console.log('hi')\n\nif (true) {\n  throw new Error('testing')\n}\n"
+  ]
+}
